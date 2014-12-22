@@ -1,0 +1,128 @@
+package hawk.ui.dialog;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+import org.eclipse.jface.dialogs.Dialog;
+import org.eclipse.jface.dialogs.IDialogConstants;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.ModifyEvent;
+import org.eclipse.swt.events.ModifyListener;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class HConfigDialog extends Dialog {
+
+
+	private String index;
+	private Text queryField;
+	private Text resultField;
+	private String initialQuery="";
+
+	public HConfigDialog(Shell parentShell, String in) {
+		super(parentShell);
+
+		index=in;
+	}
+
+	 @Override
+	   protected void createButtonsForButtonBar(Composite parent) {
+	    super.createButtonsForButtonBar(parent);
+
+	    Button ok = getButton(IDialogConstants.OK_ID);
+	    ok.setText("Done");
+	    setButtonLayoutData(ok);
+	 }
+	 
+	protected Control createDialogArea(Composite parent) {
+		Composite container = (Composite) super.createDialogArea(parent);
+		final GridLayout gridLayout = new GridLayout();
+		gridLayout.numColumns = 2;
+		container.setLayout(gridLayout);
+
+		final Label instructionsLabel = new Label(container, SWT.NONE);
+		instructionsLabel.setLayoutData(new GridData(GridData.BEGINNING,
+				GridData.CENTER, false, false, 2, 1));
+		instructionsLabel.setText("Enter options.");
+
+		final Label qLabel = new Label(container, SWT.NONE);
+		qLabel.setLayoutData(new GridData(GridData.END, GridData.CENTER,
+				false, false));
+		qLabel.setText("Option:");
+		
+		final Label dummy = new Label(container, SWT.NONE);
+		dummy.setLayoutData(new GridData(GridData.END, GridData.CENTER,
+				false, false));
+		dummy.setText("");
+
+		queryField = new Text(container,  SWT.MULTI | SWT.BORDER | SWT.WRAP | SWT.V_SCROLL);
+	    GridData gridDataQ = new GridData();
+	    gridDataQ.grabExcessHorizontalSpace = true;
+	    gridDataQ.horizontalAlignment = GridData.FILL_BOTH;
+	    gridDataQ.minimumWidth = 600;
+	    gridDataQ.minimumHeight = 300;
+	    gridDataQ.heightHint = 300;
+	    gridDataQ.horizontalSpan = 2;
+	    
+		queryField.setLayoutData(gridDataQ);
+
+		final Label rLabel = new Label(container, SWT.NONE);
+		final GridData gridData = new GridData(GridData.END, GridData.CENTER,
+				false, false);
+		gridData.horizontalIndent = 20;
+		rLabel.setLayoutData(gridData);
+		rLabel.setText("Option:");
+		
+		
+		final Label dummy2 = new Label(container, SWT.NONE);
+		dummy2.setLayoutData(new GridData(GridData.END, GridData.CENTER,
+				false, false));
+		dummy2.setText("");
+		
+
+		resultField = new Text(container,  SWT.MULTI | SWT.BORDER | SWT.WRAP | SWT.V_SCROLL);	    
+		GridData gridDataR = new GridData();
+	    gridDataR.grabExcessHorizontalSpace = true;
+	    gridDataR.horizontalAlignment = GridData.FILL_BOTH;
+	    gridDataR.minimumWidth = 600;
+	    gridDataR.minimumHeight = 300;
+	    gridDataR.heightHint = 300;
+	    gridDataR.horizontalSpan = 2;
+		resultField.setLayoutData(gridDataR);
+		resultField.setEditable(false);
+		
+
+		initContent();
+		return container;
+	}
+
+
+
+	private void initContent() {
+		queryField.setText(initialQuery);
+		
+		queryField.addModifyListener(new ModifyListener() {
+			public void modifyText(ModifyEvent e) {
+				initialQuery = queryField.getText();
+			}
+		});
+
+
+
+	}
+
+	protected void configureShell(Shell newShell) {
+		super.configureShell(newShell);
+		newShell.setText("Config: "+index);
+	}
+}
