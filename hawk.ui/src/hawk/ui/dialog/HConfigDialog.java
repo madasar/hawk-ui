@@ -89,7 +89,7 @@ public class HConfigDialog extends Dialog {
 		gridLayout.numColumns = 2;     
 		composite.setLayout(gridLayout);
 
-		mmList = new List (composite, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL);
+		mmList = new List (composite, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL | SWT.H_SCROLL);
 	    GridData gridDataQ = new GridData();
 	    gridDataQ.grabExcessHorizontalSpace = true;
 	    gridDataQ.horizontalAlignment = GridData.FILL_BOTH;
@@ -165,7 +165,7 @@ public class HConfigDialog extends Dialog {
 		gridLayout.numColumns = 5;     
 		composite.setLayout(gridLayout);
 
-		locList = new List (composite, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL);
+		locList = new List (composite, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL | SWT.H_SCROLL);
 	    GridData gridDataQ = new GridData();
 	    gridDataQ.grabExcessHorizontalSpace = true;
 	    gridDataQ.horizontalAlignment = GridData.FILL_BOTH;

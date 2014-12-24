@@ -113,7 +113,7 @@ public class HWizardPage extends WizardPage {
 		label.setLayoutData(gd);
 		label.setText("&Hawk plugins:");
 		
-		  pluginTable = new Table(container, SWT.CHECK | SWT.BORDER | SWT.V_SCROLL
+		  pluginTable = new Table(container, SWT.BORDER | SWT.V_SCROLL
 	            | SWT.H_SCROLL);
 
 		gd = new GridData(GridData.FILL_HORIZONTAL);
@@ -127,7 +127,7 @@ public class HWizardPage extends WizardPage {
 	    	 TableItem item = new TableItem(pluginTable, SWT.NULL); 
 	    	 item.setText(plugin); 
 	    	 item.setText(0, plugin);
-	    	 item.setChecked(true);
+	    	 //item.setChecked(true);
 	     }
 	     
 	     pluginTable.getColumn(0).pack();

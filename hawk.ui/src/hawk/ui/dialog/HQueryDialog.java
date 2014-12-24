@@ -105,7 +105,7 @@ public class HQueryDialog extends Dialog {
 		button.setText("Query");
 		button.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				resultField.setText(index.runEOL(queryField.getText()));
+				resultField.setText(index.query(queryField.getText()));
 			}
 		});
 		

@@ -12,6 +12,7 @@ package hawk.ui.util;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -414,6 +415,20 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 		for(HModel hm:all)
 			if(hm.isRunning())
 				hm.stop();
+	}
+	
+	public static IGraphDatabase getGraphByIndexerName(String indexerName) {
+		for(HModel hm:all)
+			if(hm.getName().equals(indexerName))
+				return hm.getGraph();
+		return null;
+	}
+	public static Collection<String> getIndexerNames() {
+		ArrayList<String> name = new ArrayList<String>();
+		for(HModel hm:all)
+			if(hm.isRunning())
+				name.add(hm.getName());
+		return name;
 	}
 
 }
