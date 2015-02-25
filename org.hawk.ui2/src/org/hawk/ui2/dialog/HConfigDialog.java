@@ -1,8 +1,4 @@
-package hawk.ui.dialog;
-
-import hawk.ui.util.HManager;
-import hawk.ui.util.HModel;
-
+package org.hawk.ui2.dialog;
 
 import java.io.File;
 
@@ -32,8 +28,9 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.Text;
-
 import org.hawk.core.IVcsManager;
+import org.hawk.ui2.util.HManager;
+import org.hawk.ui2.util.HModel;
 
 
 public class HConfigDialog extends Dialog {

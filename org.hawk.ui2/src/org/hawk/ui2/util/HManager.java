@@ -8,7 +8,7 @@
  * Contributors:
  *     Konstantinos Barmpis - initial API and implementation
  ******************************************************************************/
-package hawk.ui.util;
+package org.hawk.ui2.util;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -314,7 +314,7 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 		if (Platform.isRunning()) {
 			IConfigurationElement[] e = Platform.getExtensionRegistry()
 					.getConfigurationElementsFor(
-							"com.googlecode.hawk.core.BackEndExtensionPoint");
+							"org.hawk.core.BackEndExtensionPoint");
 
 			for (IConfigurationElement el : e)
 				els.add(el);
@@ -330,7 +330,7 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 
 			IConfigurationElement[] e = Platform.getExtensionRegistry()
 					.getConfigurationElementsFor(
-							"com.googlecode.hawk.core.QueryExtensionPoint");
+							"org.hawk.core.QueryExtensionPoint");
 
 			for (IConfigurationElement el : e)
 				els.add(el);
@@ -347,7 +347,7 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 			IConfigurationElement[] e = Platform
 					.getExtensionRegistry()
 					.getConfigurationElementsFor(
-							"com.googlecode.hawk.core.ModelUpdaterExtensionPoint");
+							"org.hawk.core.ModelUpdaterExtensionPoint");
 
 			for (IConfigurationElement el : e)
 				els.add(el);
@@ -363,7 +363,7 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 
 			IConfigurationElement[] e = Platform.getExtensionRegistry()
 					.getConfigurationElementsFor(
-							"com.googlecode.hawk.core.VCSExtensionPoint");
+							"org.hawk.core.VCSExtensionPoint");
 
 			for (IConfigurationElement el : e)
 				els.add(el);
@@ -379,7 +379,7 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 
 			IConfigurationElement[] e = Platform.getExtensionRegistry()
 					.getConfigurationElementsFor(
-							"com.googlecode.hawk.core.ModelExtensionPoint");
+							"org.hawk.core.ModelExtensionPoint");
 
 			for (IConfigurationElement el : e)
 				els.add(el);
@@ -395,7 +395,7 @@ public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 
 			IConfigurationElement[] e = Platform.getExtensionRegistry()
 					.getConfigurationElementsFor(
-							"com.googlecode.hawk.core.MetaModelExtensionPoint");
+							"org.hawk.core.MetaModelExtensionPoint");
 
 			for (IConfigurationElement el : e)
 				els.add(el);

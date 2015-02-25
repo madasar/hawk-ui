@@ -10,4 +10,4 @@ Require-Bundle: org.eclipse.epsilon.common.dt,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: Eclipse.org
-Export-Package: hawk.ui.emc.dt
+Export-Package: org.hawk.ui.emc.dt2

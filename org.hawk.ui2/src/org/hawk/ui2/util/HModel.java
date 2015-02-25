@@ -1,4 +1,4 @@
-package hawk.ui.util;
+package org.hawk.ui2.util;
 
 import java.io.File;
 import java.io.FileInputStream;

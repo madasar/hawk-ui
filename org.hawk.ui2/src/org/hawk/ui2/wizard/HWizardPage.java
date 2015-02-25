@@ -1,6 +1,4 @@
-package hawk.ui.wizard;
-
-import hawk.ui.util.HManager;
+package org.hawk.ui2.wizard;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -33,6 +31,7 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.dialogs.ContainerSelectionDialog;
+import org.hawk.ui2.util.HManager;
 
 /**
  * 

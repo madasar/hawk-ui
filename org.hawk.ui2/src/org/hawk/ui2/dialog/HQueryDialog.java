@@ -1,6 +1,4 @@
-package hawk.ui.dialog;
-
-import hawk.ui.util.HModel;
+package org.hawk.ui2.dialog;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -22,8 +20,8 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-
 import org.hawk.core.IModelIndexer;
+import org.hawk.ui2.util.HModel;
 
 public class HQueryDialog extends Dialog {
 

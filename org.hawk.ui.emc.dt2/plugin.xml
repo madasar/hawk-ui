@@ -4,8 +4,8 @@
    <extension
          point="org.eclipse.epsilon.common.dt.modelType">
       <modelType
-            class="hawk.ui.emc.dt.HawkModel"
-            dialog="hawk.ui.emc.dt.HawkModelConfigurationDialog"
+            class="org.hawk.ui.emc.dt2.HawkModel"
+            dialog="org.hawk.ui.emc.dt2.HawkModelConfigurationDialog"
             icon="images/xml.png"
             label="Hawk Model"
             stable="true"

@@ -1,11 +1,6 @@
-package hawk.ui.view;
+package org.hawk.ui2.view;
 
 
-
-import hawk.ui.dialog.HConfigDialog;
-import hawk.ui.dialog.HQueryDialog;
-import hawk.ui.util.HManager;
-import hawk.ui.util.HModel;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.FileLocator;
@@ -39,6 +34,10 @@ import org.eclipse.ui.ISharedImages;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.part.ViewPart;
 import org.eclipse.ui.wizards.IWizardDescriptor;
+import org.hawk.ui2.dialog.HConfigDialog;
+import org.hawk.ui2.dialog.HQueryDialog;
+import org.hawk.ui2.util.HManager;
+import org.hawk.ui2.util.HModel;
 import org.osgi.framework.FrameworkUtil;
 
 

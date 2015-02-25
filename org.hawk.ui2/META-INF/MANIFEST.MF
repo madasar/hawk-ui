@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Plugin
 Bundle-SymbolicName: org.hawk.ui2;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: hawk.ui.Activator
+Bundle-Activator: org.hawk.ui2.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
@@ -13,4 +13,4 @@ Require-Bundle: org.eclipse.ui,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Import-Package: org.eclipse.ui.console
-Export-Package: hawk.ui.util
+Export-Package: org.hawk.ui2.util

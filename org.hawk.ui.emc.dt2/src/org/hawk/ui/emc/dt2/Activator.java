@@ -8,7 +8,7 @@
  * Contributors:
  *     Dimitrios Kolovos - initial API and implementation
  ******************************************************************************/
-package hawk.ui.emc.dt;
+package org.hawk.ui.emc.dt2;
 
 import org.eclipse.core.runtime.Plugin;
 import org.osgi.framework.BundleContext;

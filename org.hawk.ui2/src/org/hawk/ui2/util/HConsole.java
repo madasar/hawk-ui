@@ -8,7 +8,7 @@
  * Contributors:
  *     Konstantinos Barmpis - initial API and implementation
  ******************************************************************************/
-package hawk.ui.util;
+package org.hawk.ui2.util;
 
 import java.io.PrintStream;
 

@@ -1,4 +1,4 @@
-package hawk.ui.wizard;
+package org.hawk.ui2.wizard;
 
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.wizard.Wizard;
@@ -8,9 +8,6 @@ import org.eclipse.ui.PartInitException;
 import org.eclipse.core.runtime.*;
 import org.eclipse.jface.operation.*;
 
-import hawk.ui.util.HModel;
-import hawk.ui.view.HView;
-
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
@@ -18,6 +15,8 @@ import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.ui.*;
+import org.hawk.ui2.util.HModel;
+import org.hawk.ui2.view.HView;
 
 /**
  * This is a sample new wizard. 

@@ -1,4 +1,4 @@
-package hawk.ui;
+package org.hawk.ui2;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;

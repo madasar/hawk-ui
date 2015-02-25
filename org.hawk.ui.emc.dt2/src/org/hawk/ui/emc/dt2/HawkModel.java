@@ -1,4 +1,4 @@
-package hawk.ui.emc.dt;
+package org.hawk.ui.emc.dt2;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,10 +9,9 @@ import org.eclipse.epsilon.eol.models.IRelativePathResolver;
 import org.eclipse.epsilon.eol.models.Model;
 import org.eclipse.epsilon.eol.models.ModelReference;
 import org.eclipse.epsilon.eol.models.java.JavaModel;
-
 import org.hawk.core.graph.IGraphDatabase;
 import org.hawk.epsilon.emc.EOLQueryEngine;
-import hawk.ui.util.HManager;
+import org.hawk.ui2.util.HManager;
 
 public class HawkModel extends ModelReference {
 

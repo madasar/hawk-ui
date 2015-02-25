@@ -8,9 +8,7 @@
  * Contributors:
  *     Dimitrios Kolovos - initial API and implementation
  ******************************************************************************/
-package hawk.ui.emc.dt;
-
-import hawk.ui.util.HManager;
+package org.hawk.ui.emc.dt2;
 
 import org.eclipse.epsilon.common.dt.launching.dialogs.AbstractModelConfigurationDialog;
 import org.eclipse.swt.SWT;
@@ -21,6 +19,7 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
+import org.hawk.ui2.util.HManager;
 
 public class HawkModelConfigurationDialog extends
 		AbstractModelConfigurationDialog {
