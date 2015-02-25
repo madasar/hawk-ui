@@ -17,15 +17,15 @@ import java.util.regex.Pattern;
 import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.emf.ecore.EPackage;
 
-import com.googlecode.hawk.core.IMetaModelResourceFactory;
-import com.googlecode.hawk.core.IMetaModelUpdater;
-import com.googlecode.hawk.core.IModelIndexer;
-import com.googlecode.hawk.core.IModelResourceFactory;
-import com.googlecode.hawk.core.IModelUpdater;
-import com.googlecode.hawk.core.IVcsManager;
-import com.googlecode.hawk.core.graph.IGraphDatabase;
-import com.googlecode.hawk.core.query.IQueryEngine;
-import com.googlecode.hawk.core.runtime.ModelIndexerImpl;
+import org.hawk.core.IMetaModelResourceFactory;
+import org.hawk.core.IMetaModelUpdater;
+import org.hawk.core.IModelIndexer;
+import org.hawk.core.IModelResourceFactory;
+import org.hawk.core.IModelUpdater;
+import org.hawk.core.IVcsManager;
+import org.hawk.core.graph.IGraphDatabase;
+import org.hawk.core.query.IQueryEngine;
+import org.hawk.core.runtime.ModelIndexerImpl;
 
 public class HModel {
 

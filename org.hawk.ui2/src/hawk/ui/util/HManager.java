@@ -26,12 +26,12 @@ import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchListener;
 import org.eclipse.ui.PlatformUI;
 
-import com.googlecode.hawk.core.IMetaModelResourceFactory;
-import com.googlecode.hawk.core.IMetaModelUpdater;
-import com.googlecode.hawk.core.IModelResourceFactory;
-import com.googlecode.hawk.core.IModelUpdater;
-import com.googlecode.hawk.core.IVcsManager;
-import com.googlecode.hawk.core.graph.IGraphDatabase;
+import org.hawk.core.IMetaModelResourceFactory;
+import org.hawk.core.IMetaModelUpdater;
+import org.hawk.core.IModelResourceFactory;
+import org.hawk.core.IModelUpdater;
+import org.hawk.core.IVcsManager;
+import org.hawk.core.graph.IGraphDatabase;
 
 public class HManager implements IStructuredContentProvider,IWorkbenchListener{
 	

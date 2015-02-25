@@ -21,7 +21,7 @@ import org.eclipse.ui.console.IConsoleManager;
 import org.eclipse.ui.console.IOConsole;
 import org.eclipse.ui.console.IOConsoleOutputStream;
 
-import com.googlecode.hawk.core.IAbstractConsole;
+import org.hawk.core.IAbstractConsole;
 
 public class HConsole implements IAbstractConsole {
 

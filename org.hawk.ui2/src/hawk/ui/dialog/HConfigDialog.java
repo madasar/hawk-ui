@@ -33,7 +33,7 @@ import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.Text;
 
-import com.googlecode.hawk.core.IVcsManager;
+import org.hawk.core.IVcsManager;
 
 
 public class HConfigDialog extends Dialog {

@@ -23,7 +23,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
-import com.googlecode.hawk.core.IModelIndexer;
+import org.hawk.core.IModelIndexer;
 
 public class HQueryDialog extends Dialog {
 

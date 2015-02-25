@@ -1,14 +1,14 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Plugin
-Bundle-SymbolicName: hawk.ui;singleton:=true
+Bundle-SymbolicName: org.hawk.ui2;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: hawk.ui.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
  org.eclipse.ui.ide,
- com.googlecode.hawk.core,
+ org.hawk.core,
  org.eclipse.emf.ecore
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7

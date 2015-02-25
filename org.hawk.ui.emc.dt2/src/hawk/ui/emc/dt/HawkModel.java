@@ -10,8 +10,8 @@ import org.eclipse.epsilon.eol.models.Model;
 import org.eclipse.epsilon.eol.models.ModelReference;
 import org.eclipse.epsilon.eol.models.java.JavaModel;
 
-import com.googlecode.hawk.core.graph.IGraphDatabase;
-import com.googlecode.hawk.epsilon.emc.EOLQueryEngine;
+import org.hawk.core.graph.IGraphDatabase;
+import org.hawk.epsilon.emc.EOLQueryEngine;
 import hawk.ui.util.HManager;
 
 public class HawkModel extends ModelReference {
